@@ -18,4 +18,11 @@ permalink: /rules/
 However if the gap between last player few players is very high, the team strength may decrease.
 Similarly a larges squad can be selected.
 
-- For players having tie the player with higher score in trials will be selected.
+- For players having tie the player with higher score in trials will be
+  selected.
+
+## Contacts
+
+- If you want your name to be added to the Leader board. You write So in
+  the IIT Bombay Frisbee team group.
+- Once your name is added your performance will be tracked.
