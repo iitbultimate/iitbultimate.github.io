@@ -46,7 +46,6 @@ def read_daily_data():
         names = []
         while (line.strip() != '*'):
           name = re.findall('[A-Z,a-z]+', line)[-1].title()
-          print(name)
           names.append(name)
           index += 1
           if not (index < len(lines)):break
@@ -64,8 +63,10 @@ def add_to_database(session_name, names):
     for key in data.keys():
       if re.match(name, key.title()):
         if session_name == 'practice':
+          print('Adding 2 points to ', key)
           data[key]['Practice'] += 2
         elif session_name == 'game':
+          print('Adding 1 points to ', key)
           data[key]['Game'] += 1
 
 
@@ -90,9 +91,7 @@ def write_new_data():
 
   sortedid = reversed(np.argsort(totals))
   keys = data.keys()
-  print(keys)
   keys = [k for k in keys if not k == 'Date']
-  print(keys)
   sno = 1
 
   for id in sortedid:
@@ -106,14 +105,13 @@ def write_new_data():
 
   fp = open('index.markdown', 'w')
   date = datetime.strftime(datetime.today(), "%d-%m-%Y")
-  print(date)
+  data['Date'] = date
   fp.write(header)
   fp.write(towrite)
   fp.write("\n\nlast update %s"%date)
   fp.close()
-  print(towrite)
 
-  json.dump(data, open('team.json'))
+  json.dump(data, open('team.json', 'w'), indent = 1)
 
 
 if __name__ == '__main__':

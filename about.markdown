@@ -6,7 +6,7 @@ permalink: /rules/
 
 ## Scores description
 
-- The *experience score* is given 35 points for a month that means for a 2month experience player the score is 70. This score will set after eachTournament. The total score minus the trial score will be the player experience
+- The *experience score* is given 20 points for a month that means for a 2 months experience player the score is 40. This score will set after eachTournament. The total score minus the trial score will be the player experience
 - For attending a practice session a player will be awarded with 2 points
 - For attending a game session a player will be awarded with 1 point
 - Before every tournament trials will be held worth 100 points. The details
