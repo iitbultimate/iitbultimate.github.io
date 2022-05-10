@@ -9,6 +9,7 @@ header = r'''---
 
 layout: home
 ---
+{% include_relative updates.markdown %}
 
 # Leader board
 
